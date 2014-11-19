@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SpaceWatchRunner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,73 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E5Q-DD-1DB">
+                                <rect key="frame" x="43" y="254" width="526" height="92"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="40" id="JS8-gK-Elj">
+                                    <size key="itemSize" width="66" height="92"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="40" minY="0.0" maxX="40" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animatedImageViewCell" id="eug-vd-YaZ" customClass="AnimatedIconCollectionViewCell" customModule="SpaceWatchRunner" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="66" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="p1_walk0" translatesAutoresizingMaskIntoConstraints="NO" id="gG1-Ng-eIY">
+                                                    <rect key="frame" x="0.0" y="0.0" width="66" height="92"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="66" id="dFi-Bz-c8X"/>
+                                                        <constraint firstAttribute="height" constant="92" id="rrD-HT-gkS"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <connections>
+                                            <outlet property="animatedImageView" destination="gG1-Ng-eIY" id="gYV-QE-e7J"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="6yk-Ll-dJs"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Ug4-dM-ZcL"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Run the SpaceWatchRunner Watch App target to see these guys in action!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPa-8c-giX">
+                                <rect key="frame" x="26" y="160" width="548" height="86"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="zPa-8c-giX" secondAttribute="centerY" constant="97" id="4KW-j5-cFK"/>
+                            <constraint firstAttribute="centerX" secondItem="E5Q-DD-1DB" secondAttribute="centerX" constant="-6" id="58d-bK-x1X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zPa-8c-giX" secondAttribute="trailing" constant="10" id="IGP-Az-Z56"/>
+                            <constraint firstItem="E5Q-DD-1DB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="27" id="McM-yK-pXk"/>
+                            <constraint firstItem="zPa-8c-giX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="Pz6-nv-HSV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="E5Q-DD-1DB" secondAttribute="trailing" constant="15" id="YIq-2a-vkS"/>
+                            <constraint firstItem="E5Q-DD-1DB" firstAttribute="top" secondItem="zPa-8c-giX" secondAttribute="bottom" constant="8" id="ntA-cv-VNa"/>
+                            <constraint firstAttribute="centerY" secondItem="E5Q-DD-1DB" secondAttribute="centerY" id="w6u-Qo-ZRO"/>
+                            <constraint firstAttribute="centerX" secondItem="zPa-8c-giX" secondAttribute="centerX" id="ztf-hH-IN5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="E5Q-DD-1DB" id="qDg-3F-Fx1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="p1_walk0" width="36" height="48"/>
+    </resources>
 </document>
