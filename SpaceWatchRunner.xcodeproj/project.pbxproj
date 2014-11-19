@@ -13,6 +13,8 @@
 		EBBBBBBD1A1C4AB200CEC476 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBBBC1A1C4AB200CEC476 /* Images.xcassets */; };
 		EBBBBBC01A1C4AB200CEC476 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBBBE1A1C4AB200CEC476 /* LaunchScreen.xib */; };
 		EBBBBBCC1A1C4AB200CEC476 /* SpaceWatchRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBBBCB1A1C4AB200CEC476 /* SpaceWatchRunnerTests.swift */; };
+		EBBBBBD61A1C4AF000CEC476 /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */; };
+		EBBBBBD81A1C4B1F00CEC476 /* Player.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		EBBBBBC51A1C4AB200CEC476 /* SpaceWatchRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceWatchRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBBBBCA1A1C4AB200CEC476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBBBBCB1A1C4AB200CEC476 /* SpaceWatchRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceWatchRunnerTests.swift; sourceTree = "<group>"; };
+		EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Background.xcassets; sourceTree = "<group>"; };
+		EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Player.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				EBBBBBB71A1C4AB200CEC476 /* ViewController.swift */,
 				EBBBBBB91A1C4AB200CEC476 /* Main.storyboard */,
 				EBBBBBBC1A1C4AB200CEC476 /* Images.xcassets */,
+				EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */,
+				EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */,
 				EBBBBBBE1A1C4AB200CEC476 /* LaunchScreen.xib */,
 				EBBBBBB31A1C4AB200CEC476 /* Supporting Files */,
 			);
@@ -193,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBBBBBB1A1C4AB200CEC476 /* Main.storyboard in Resources */,
+				EBBBBBD81A1C4B1F00CEC476 /* Player.xcassets in Resources */,
 				EBBBBBC01A1C4AB200CEC476 /* LaunchScreen.xib in Resources */,
 				EBBBBBBD1A1C4AB200CEC476 /* Images.xcassets in Resources */,
+				EBBBBBD61A1C4AF000CEC476 /* Background.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
