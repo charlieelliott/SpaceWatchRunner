@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB683F4D1A23E68A006274AA /* a1ec8b6.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB683F4C1A23E68A006274AA /* a1ec8b6.xcassets */; };
+		EB683F4E1A23E6EE006274AA /* a1ec8b6.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB683F4C1A23E68A006274AA /* a1ec8b6.xcassets */; };
+		EB683F4F1A23E6EF006274AA /* a1ec8b6.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB683F4C1A23E68A006274AA /* a1ec8b6.xcassets */; };
+		EB683F501A23E75A006274AA /* Player.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */; };
+		EB683F511A23E781006274AA /* Background.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */; };
 		EBBBBBB61A1C4AB200CEC476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBBBB51A1C4AB200CEC476 /* AppDelegate.swift */; };
 		EBBBBBB81A1C4AB200CEC476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBBBB71A1C4AB200CEC476 /* ViewController.swift */; };
 		EBBBBBBB1A1C4AB200CEC476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBBBBB91A1C4AB200CEC476 /* Main.storyboard */; };
@@ -65,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB683F4C1A23E68A006274AA /* a1ec8b6.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = a1ec8b6.xcassets; sourceTree = "<group>"; };
 		EBBBBBB01A1C4AB200CEC476 /* SpaceWatchRunner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceWatchRunner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBBBBB41A1C4AB200CEC476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBBBBB51A1C4AB200CEC476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,8 +81,8 @@
 		EBBBBBC51A1C4AB200CEC476 /* SpaceWatchRunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceWatchRunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBBBBCA1A1C4AB200CEC476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBBBBBCB1A1C4AB200CEC476 /* SpaceWatchRunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceWatchRunnerTests.swift; sourceTree = "<group>"; };
-		EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Background.xcassets; path = ../SpaceWatchRunner/Background.xcassets; sourceTree = "<group>"; };
-		EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Player.xcassets; path = ../SpaceWatchRunner/Player.xcassets; sourceTree = "<group>"; };
+		EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Background.xcassets; sourceTree = "<group>"; };
+		EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Player.xcassets; sourceTree = "<group>"; };
 		EBBBBBDD1A1C4BCC00CEC476 /* SpaceWatchRunner WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SpaceWatchRunner WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBBBBBDF1A1C4BCC00CEC476 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 		EBBBBBE31A1C4BCC00CEC476 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,6 +154,9 @@
 				EBBBBBB91A1C4AB200CEC476 /* Main.storyboard */,
 				EBBBBC041A1C569700CEC476 /* AnimatedIconCollectionViewCell.swift */,
 				EBBBBBBC1A1C4AB200CEC476 /* Images.xcassets */,
+				EB683F4C1A23E68A006274AA /* a1ec8b6.xcassets */,
+				EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */,
+				EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */,
 				EBBBBBBE1A1C4AB200CEC476 /* LaunchScreen.xib */,
 				EBBBBBB31A1C4AB200CEC476 /* Supporting Files */,
 			);
@@ -212,8 +221,6 @@
 			children = (
 				EBBBBBF41A1C4BCC00CEC476 /* Interface.storyboard */,
 				EBBBBBF61A1C4BCC00CEC476 /* Images.xcassets */,
-				EBBBBBD71A1C4B1F00CEC476 /* Player.xcassets */,
-				EBBBBBD51A1C4AF000CEC476 /* Background.xcassets */,
 				EBBBBBF21A1C4BCC00CEC476 /* Supporting Files */,
 			);
 			path = "SpaceWatchRunner Watch App";
@@ -351,8 +358,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBBBBBB1A1C4AB200CEC476 /* Main.storyboard in Resources */,
+				EB683F501A23E75A006274AA /* Player.xcassets in Resources */,
 				EBBBBBC01A1C4AB200CEC476 /* LaunchScreen.xib in Resources */,
+				EB683F4D1A23E68A006274AA /* a1ec8b6.xcassets in Resources */,
 				EBBBBBBD1A1C4AB200CEC476 /* Images.xcassets in Resources */,
+				EB683F511A23E781006274AA /* Background.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBBBBBEE1A1C4BCC00CEC476 /* SpaceWatchRunner Watch App.app in Resources */,
+				EB683F4F1A23E6EF006274AA /* a1ec8b6.xcassets in Resources */,
 				EBBBBBEA1A1C4BCC00CEC476 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +391,7 @@
 				EBBBBBF51A1C4BCC00CEC476 /* Interface.storyboard in Resources */,
 				EBBBBBF71A1C4BCC00CEC476 /* Images.xcassets in Resources */,
 				EBBBBC021A1C528E00CEC476 /* Background.xcassets in Resources */,
+				EB683F4E1A23E6EE006274AA /* a1ec8b6.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +545,7 @@
 		EBBBBBD01A1C4AB200CEC476 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = BetaAppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SpaceWatchRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -544,7 +556,7 @@
 		EBBBBBD11A1C4AB200CEC476 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = BetaAppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SpaceWatchRunner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -589,7 +601,7 @@
 		EBBBBBFC1A1C4BCC00CEC476 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = BetaAppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -607,7 +619,7 @@
 		EBBBBBFD1A1C4BCC00CEC476 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = BetaAppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				IBSC_MODULE = SpaceWatchRunner_WatchKit_Extension;
 				INFOPLIST_FILE = "SpaceWatchRunner Watch App/Info.plist";
@@ -661,6 +673,7 @@
 				EBBBBBD11A1C4AB200CEC476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBBBBBD21A1C4AB200CEC476 /* Build configuration list for PBXNativeTarget "SpaceWatchRunnerTests" */ = {
 			isa = XCConfigurationList;
@@ -669,6 +682,7 @@
 				EBBBBBD41A1C4AB200CEC476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBBBBBFB1A1C4BCC00CEC476 /* Build configuration list for PBXNativeTarget "SpaceWatchRunner Watch App" */ = {
 			isa = XCConfigurationList;
@@ -677,6 +691,7 @@
 				EBBBBBFD1A1C4BCC00CEC476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBBBBBFE1A1C4BCC00CEC476 /* Build configuration list for PBXNativeTarget "SpaceWatchRunner WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -685,6 +700,7 @@
 				EBBBBC001A1C4BCC00CEC476 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

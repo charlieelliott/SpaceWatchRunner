@@ -21,12 +21,14 @@ class AnimatedIconCollectionViewCell: UICollectionViewCell {
         var temp = NSMutableArray()
         for var i = 1; i < 12; i++ {
             var name = "\(name)_walk\(i)"
-            temp.addObject(UIImage(named: name)!)
+            if let image = UIImage(named: name) {
+                temp.addObject(image)
+            }
         }
         
         animatedImageView.animationImages = temp
         
-        animatedImageView.animationDuration = (11 / 30)
+        animatedImageView.animationDuration = (11.0 / 30.0) //30 fps
         animatedImageView.startAnimating()
     }
 }
