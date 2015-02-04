@@ -21,12 +21,14 @@ class InterfaceController: WKInterfaceController {
     
     //Lifecycle
     
-    override init(context: AnyObject?) {
+    init(context: AnyObject?) {
         // Initialize variables here.
-        super.init(context: context)
+        super.init()
         
         // Configure interface objects here.
         NSLog("%@ init", self)
+        
+        self.preCacheImages()
     }
 
     override func willActivate() {
