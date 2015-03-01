@@ -31,7 +31,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("animatedImageViewCell", forIndexPath: indexPath) as UICollectionViewCell
+        var cell = collectionView.dequeueReusableCellWithReuseIdentifier("animatedImageViewCell", forIndexPath: indexPath) as! UICollectionViewCell
         
         if let animatedCell = cell as? AnimatedIconCollectionViewCell {
             animatedCell.updateImageViewWithPlayerName("p\(indexPath.row + 1)")

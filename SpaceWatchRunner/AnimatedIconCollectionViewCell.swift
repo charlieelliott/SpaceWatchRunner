@@ -26,7 +26,7 @@ class AnimatedIconCollectionViewCell: UICollectionViewCell {
             }
         }
         
-        animatedImageView.animationImages = temp
+        animatedImageView.animationImages = temp as [AnyObject]
         
         animatedImageView.animationDuration = (11.0 / 30.0) //30 fps
         animatedImageView.startAnimating()
